@@ -63,9 +63,9 @@ function disable(){
     document.getElementById("days").disabled = true;
 }
 
-// function undisable(){
-//     document.getElementById("days").disabled = false;
-// }
+function undisable(){
+    document.getElementById("days").disabled = false;
+}
 
 
 function final(){
