@@ -1,0 +1,12 @@
+.box{
+    height: 300px;
+}
+h1{
+    display: inline-block;
+    border: 2px solid red;
+    width: 300px;
+    margin: 50px;
+    margin-right: 180px;
+    padding: 50px;
+
+}

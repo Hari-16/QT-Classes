@@ -1,0 +1,23 @@
+.container{
+    border: 10px solid green;
+    width: 50%;
+}
+.box1{
+    border: 5px solid black;
+    width: 50%;
+}
+.box2{
+    border: 5px solid blue;
+    width: 50%;
+}
+.a{
+    width: 60%;
+    height: 40px;
+    background-color: yellow;
+}
+.container>p{
+    color: red;
+}
+.box1+p{
+    color: teal;
+}

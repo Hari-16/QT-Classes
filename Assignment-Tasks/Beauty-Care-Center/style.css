@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    font-family: Georgia;
+}
+#main{
+    display: grid;
+    color: white;
+    justify-content: center;
+    background-color: black(255, 255, 255);
+    border: 2px solid white;
+    width: 50%;
+    height: 600px;
+    margin: auto;
+    padding: 15px;
+    
+}
+table{
+    width: 80%;
+    margin: auto;
+    /* grid-template: ; */
+}
+
+input,select{
+    background-color: black;
+    color: rgb(65, 65, 249);
+    font-weight: bold;    
+    border: 2px solid rgb(218, 146, 82);
+    border-radius: 5px;
+    width:80% ;
+    
+}
+#radio>input{
+    width:auto;
+}
+#second>input,a{
+    width: auto;
+}
+::placeholder{
+    color: rgb(54, 54, 172);
+    font-weight:light;
+}
+
+td{
+    border: 2px solid rgb(97, 48, 6);
+    padding:10px;
+}
+
+label{
+    justify-content: start;
+    font-weight: bold;
+}
+h3{
+    background-color: rgb(1, 65, 65);
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    align-content: center;
+    text-align: center;
+    border-radius: 8px;
+}
+#second{
+    margin: 20px;
+}
+textarea{
+    border-radius: 4px;
+    font-weight:light;
+    background-color: black;
+    border: 2px solid rgb(218, 146, 82);
+}
+button{
+    border-radius: 5px;
+    margin-left: 20px;
+    color: white;
+    background-color: black;
+}
+a{
+    color: rgb(59, 99, 190);
+}
+button:hover{
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Buffet Restaurant</title>
+    <style>
+        #main{
+            background-color: #9370DB;
+            width: 70%;
+            height: 610px;
+            margin: auto;
+            border-radius: 5px;
+            border: 3px solid rgb(249, 4, 4);
+            margin-top: 20px;
+            padding: 10px;
+            padding: auto;
+        }
+        label{
+            font-weight: bold;
+        }
+        h1{
+            background-color: #FF6347;
+            text-align: center;
+            color: #FFFFFF;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            border: 5px double darkblue;
+        }
+        button{
+            padding: 7px 45px;
+            border: groove;
+            font-family: bahnschrift;
+            margin: 20px 10px;
+            font-weight: bold;
+            color: black;
+            background-color: #FFDEAD;
+        }
+        button:hover{
+            font-weight: bolder;
+            color: green;
+            background-color: white;
+        }
+        .veg{
+            background-color: rgb(237, 172, 87);
+            border: 2px solid white;
+            width: 70%;
+        }
+        #option{
+            width: 70%;
+            
+        }
+        #result{
+            color: rgb(35, 2, 112);
+            text-align: center;
+            background-color: rgb(0, 255, 81);
+            font-weight: bold;
+            padding: 7px;
+            font-size: larger;
+            border-radius: 15px;
+            border: 5px double rgb(0, 4, 128);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="" onsubmit="bill()">
+            <table>
+                <h1><i>Delicious Buffet Restaurant</i></h1>
+                <tr>
+                    <td><label for="name">Customer Name</label></td>
+                    <td><input type="text" placeholder="Enter your Name" name="" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Contact No</label></td>
+                    <td><input type="tel" id="mobile" placeholder="Enter your Mobile Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date For Appointment</label></td>
+                    <td><input type="date" name="" id="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="time">Timings</label></td>
+                    <td>
+                        <input type="radio" name="time" id="">
+                        <label for="">1-4pm</label>
+                        <input type="radio" name="time" id="">
+                        <label for="">4-7pm</label>
+                        <input type="radio" name="time" id="">
+                        <label for="">7-10pm</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="type">Vegetarian</label></td>
+                    <td><table>
+                        <tr><td class="veg"><label for="">Adult</label></td>
+                            <td class="veg"><input style="width: 60%;" type="tel" name="" id="vegAdt" required></td></tr><br>
+                        <tr><td class="veg"><label for="">Kids(5-9yrs)</label></td>
+                            <td class="veg"><input style="width: 60%;" type="tel" name="" id="vegkid" required></td></tr>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td><label for="type">Non-Vegetarian</label></td>
+                    <td><table>
+                        <tr><td class="veg"><label for="">Adult</label></td>
+                            <td class="veg"><input style="width: 60%;" type="tel" name="" id="nonvegadt" required></td></tr><br>
+                        <tr><td class="veg"><label for="">Kids(5-9yrs)</label></td>
+                            <td class="veg"><input style="width: 60%;" type="tel" name="" id="nonvegkid" required></td></tr>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td><label for="browser">Occasion</label></td>
+                        <!-- <input type="select" name="" id="browser" autocomplete="on"> -->
+                    <!-- <datalist id="browser"> -->
+                    <td><select name="" id="option">
+                            <option value="">Team Dinner</option>
+                            <option value="">Family Reunion</option>
+                            <option value="">Party</option>
+                            <option value="">Birthday Celebration</option>
+                            <option value="">Team Lunch</option>
+                        </select></td>
+                    <!-- </datalist> -->
+                </tr>
+                <tr>
+                    <td><label for="parking">Parking</label></td>
+                    <td><input type="checkbox" name="" id="Parking">
+                        <label for="">Parking Required</label></td>
+                </tr>
+            </table>
+            <button type="submit">submit</button>
+            <button type="reset">clear</button>
+        </form>
+        <!-- <p id="booking"></p> -->
+        <p id="result">Please Enter the Details</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

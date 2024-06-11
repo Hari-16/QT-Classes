@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Maintenance Service</title>
+    <style>
+        #main{
+            background-color: rgb(49, 181, 234);
+            border-radius: 15px;
+            width: 70%;
+            height: 610px;
+            margin: auto;
+            border: 3px solid rgb(249, 4, 4);
+            margin-top: 20px;
+            padding: 10px;
+            padding: auto;
+        }
+        h1{
+            background-color: red;
+            text-align: center;
+            border-radius: 5px;
+            border: 5px double darkblue;
+        }
+        button{
+            padding: 7px 30px;
+            border: groove;
+            border-radius: 10px;
+            margin: 20px 10px;
+            font-weight: bold;
+            color: black;
+            background-color: rgb(36, 111, 36);
+        }
+        button:hover{
+            padding: 9px 35px;
+            border: groove;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-weight: bolder;
+            color: green;
+            background-color: white;
+        }
+        #output{
+            color: rgb(35, 2, 112);
+            background-color: rgb(255, 255, 0);
+            font-weight: bold;
+            padding: 7px;
+            font-size: larger;
+            border-radius: 15px;
+            border: 5px double green;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="" onsubmit="totalcost()">
+            <table>
+                <h1><i>AC Maintenance Service</i></h1>
+                <tr>
+                    <td><label for="name">Customer Name</label></td>
+                    <td><input type="text" placeholder="Enter your Name" name="" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number</label></td>
+                    <td><input type="tel" id="mobile" placeholder="Enter your Mobile Number"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea name="" id="" cols="20" rows="5" id="address" placeholder="Enter your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="type">AC Type</label></td>
+                    <td><select name="" id="type">
+                        <option>Split</option>
+                        <option>Window</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="service">Service Type</label></td>
+                    <td>
+                        <input type="checkbox" id="cleaning" value="500">
+                        <label for="">Cleaning</label>
+                        <input type="checkbox" id="repair" value="2500">
+                        <label for="">Repair</label>
+                        <input type="checkbox" id="gas" value="750">
+                        <label for="">Gas Refill</label>
+                        <input type="checkbox" id="relocation" value="1500">
+                        <label for="">Relocation</label>
+                        <input type="checkbox" id="filter" value="250">
+                        <label for="">Filter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date For Appointment</label></td>
+                    <td><input type="date" name="" id="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="maintenance">Yearly Maintenance</label></td>
+                    <td><input type="checkbox" value="maintenance" id="maintenance">
+                        <label for="">Select if required</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <button type="submit">submit</button>
+            <button type="reset">clear</button>
+        </form>
+    <div id="output"><p id="booking">Please Enter Above Details</p>
+    <p id="result"></p></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
