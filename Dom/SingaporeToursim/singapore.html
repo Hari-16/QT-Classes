@@ -6,9 +6,9 @@
     <title>Singapore Tourism</title>
     <style>
         #main{
-            width: 70%;
+            width: 65%;
             margin: auto;
-            height: 500px;
+            height: 520px;
             margin-top: 20px;
             padding: 10px;
             background-color: rgb(153, 40, 125);
@@ -30,12 +30,12 @@
         }
         h2{
             text-align: center;
-            color: white;
+            color: #ffffff;
             padding: 5px;
             font-family:sans-serif;
             border-radius: 5px;
-            border: 4px double black;
-            background-color: rgb(74, 194, 242);
+            border: 5px double rgb(23, 16, 246);
+            background-color: rgb(51, 187, 76);
         }
         button{
             width: 100%;
@@ -43,12 +43,13 @@
             padding: 10px;
             border: groove;
             border-radius: 10px;
-            font-weight: bolder;
+            font-size: medium;
+            font-weight: bold;
             color: rgb(255, 255, 255);
             background-color: rgb(2, 162, 255);
         }
         button:hover{
-            padding: 9px 35px;
+            padding: 10px;
             border: groove;
             border-radius: 10px;
             font-weight: bolder;
@@ -93,35 +94,35 @@
                     <td>
                         <input type="radio" name="radio" id="yes" onclick="undisable()">
                         <label for="">Yes</label>
-                        <input type="radio" name="radio" id="no" onclick="disable()">
+                        <input type="radio" name="radio" id="no" onclick="disable()" checked>
                         <label for="">No</label>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="">Number Of Days Stay</label></td>
-                    <td><input type="tel" name="" style="width: 95%;" id="days" required></td>
+                    <td><input type="tel" name="" style="width: 95%;" id="days" disabled required></td>
                 </tr>
                 <tr>
                     <td><label for="">Places You Would Like To Visit</label></td>
                     <td>
                         <input type="checkbox" name="" id="pilgrimage" value="350">
-                        <label for="">Places Of Pilgrimage</label><br>
+                        <label for="pilgrimage">Places Of Pilgrimage</label><br>
                         <input type="checkbox" name="" id="heritage" value="430">
-                        <label for="">Places Of Heritage</label><br>
+                        <label for="heritage">Places Of Heritage</label><br>
                         <input type="checkbox" name="" id="hills" value="780">
-                        <label for="">Hills</label><br>
+                        <label for="hills">Hills</label><br>
                         <input type="checkbox" name="" id="falls" value="1200">
-                        <label for="">Falls</label><br>
+                        <label for="falls">Falls</label><br>
                         <input type="checkbox" name="" id="beach" value="270">
-                        <label for="">Beach</label><br>
+                        <label for="beach">Beach</label><br>
                         <input type="checkbox" name="" id="adventure" value="4500">
-                        <label for="">Places Of Adventures</label>
+                        <label for="adventure">Places Of Adventures</label>
                     </td>
                 </tr>
             </table><br>
-            <button>calculate Cost</button>
+            <button>Calculate Cost</button>
         </form>
-        <p id="result">Please Full Booking Details</p>
+        <p id="result">Please Fill Above Details For Booking</p>
     </div>
     
     <script src="script.js"></script>

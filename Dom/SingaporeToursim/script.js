@@ -90,10 +90,10 @@ function final(){
         offer = cost - (cost*(15/100));
         if(stay.checked){
         offer = staycost;
-        result.innerHTML = `Your preferred package cost ${offer}$`
+        result.innerHTML = `Your preferred package cost Rs.${offer}$`
         }
         else{
-            result.innerHTML = `Your preferred package cost ${offer}$`
+            result.innerHTML = `Your preferred package cost Rs.${offer}$`
         }
     }
 }

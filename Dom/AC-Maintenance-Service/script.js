@@ -63,10 +63,10 @@ function totalcost(){
     }
     if(maintenance.checked){
         booking.innerHTML= `${person} Your Booking for ${servicetype} Ac Service is Successful!`
-        result.innerHTML=`The Estimated Service Cost with maintance is ${bill}`        
+        result.innerHTML=`The Estimated Service Cost with Maintance is Rs.${bill}`        
     }
     else{
         booking.innerHTML= `${person} Your Booking for ${servicetype} Ac Service is Successful!`
-        result.innerHTML=`The Estimated Service Cost is ${bill}`        
+        result.innerHTML=`The Estimated Service Cost is Rs.${bill}`        
     }
 }
