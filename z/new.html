@@ -1,0 +1,171 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+    <title>boatride bill</title>
+    <style>
+    .a{
+        border:2px white;
+      }
+    h3{
+        background-color: green;
+        color:white;
+        text-align: center;
+        font-style: italic;
+        padding:2px;
+    
+     }
+     label{
+        color:aliceblue;
+        font-size:smaller; 
+        font-weight: bold;
+        text-align: center;
+        }
+        input{
+            font-size: smaller;
+         }
+     table{
+        padding-left: 50px;
+        width:400px;
+        height:200px;
+    
+     }
+      td{
+        border:1px solid white ;
+
+     }
+    .main{
+        margin-left:500px;
+        margin-right: 500px;
+        margin-top:200px ;
+        padding: 30px;
+       background-color:rgb(129, 125, 208);
+    }
+    button
+    {
+        background-color: aliceblue;
+        color: black;
+        margin-left: 40%;
+        margin-top: 30px;;
+    }
+   </style>
+    </head>
+   <body>
+    
+    <div class="main">
+        
+        <form action="" onsubmit="boatRide()">
+        <table>
+            <h3>Boat Ride Bill Automation</h3>
+          <tr>  <td>
+        <label for="">Customer Name</label></td>
+        <td><input type="text" id="cname" placeholder="Customer Name"class="a"></td></tr>
+        <tr><td><label for="">phone Number</label></td>
+        <td><input type="number" id="phno" placeholder="phone Number"class="a"></td></tr>
+        <tr><td><label for="">Email</label></td>
+        <td><input type="email" id="email" placeholder="Email"class="a"></td></tr>
+        <tr><td><label for="">Number of Persons</label></td>
+        <td><input type="tel" id="noOfPersons" placeholder="Number of Persons"class="a"></td></tr>
+        <tr><td><label for="">Boat Type</label></td>
+        <td><select id="btype" class="a">
+        <option value="2">2 Seater Pedal Boat</option>
+        <option value="4">4 Seater Pedal Boat</option>
+        <option value="8" >8 Seater Pedal Boat</option>
+        <option value="15">15 Seater Pedal Boat</option>
+      </select></td></tr>
+      <tr><td><label for="">Travel Duration in Hours</label></td>
+      <td><input type="tel" id="duration" class="a"></td></tr>
+        <tr><td style="border: none;"><button>BookRide</button></td></tr>
+    </table>
+</form>
+<p id="result">hello</p>
+</div>
+
+<script src="boat.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>boatride bill</title>
+    </head>
+<style>
+    .a{
+        border:2px white;
+      }
+    h3{
+        background-color: green;
+        color:white;
+        text-align: center;
+        font-style: italic;
+        padding:2px;
+    
+     }
+     label{
+        color:aliceblue;
+        font-size:smaller; 
+        font-weight: bold;
+        text-align: center;
+        }
+        input{
+            font-size: smaller;
+         }
+     table{
+        padding-left: 50px;
+        width:400px;
+        height:200px;
+    
+     }
+      td{
+        border:1px solid white ;
+
+     }
+    .main{
+        margin-left:500px;
+        margin-right: 500px;
+        margin-top:200px ;
+        padding: 30px;
+       background-color:rgb(129, 125, 208);
+    }
+    #submit
+    {
+        background-color: aliceblue;
+        color: black;
+        margin-left: 40%;
+        margin-top: 30px;;
+    }
+   </style>
+   <body>
+    <form action="">
+    <div class="main">
+        <h3>Boat Ride Bill Automation</h3>
+        <table>
+          <tr>  <td>
+        <label for="">Customer Name</label></td>
+        <td><input type="text" id="cname" placeholder="Customer Name"class="a"></td></tr>
+        <tr><td><label for="">phone Number</label></td>
+        <td><input type="number" id="phno" placeholder="phone Number"class="a"></td></tr>
+        <tr><td><label for="">Email</label></td>
+        <td><input type="email" id="email" placeholder="Email"class="a"></td></tr>
+        <tr><td><label for="">Number of Persons</label></td>
+        <td><input type="number" id="noOfPersons" placeholder="Number of Persons"class="a"></td></tr>
+        <tr><td><label for="">Boat Type</label></td>
+        <td><select id="btype" class="a">
+        <option value="2 Seater Pedal Boat">2 Seater Pedal Boat</option>
+        <option value="4 Seater Pedal Boat">4 Seater Pedal Boat</option>
+        <option value="8 Seater Pedal Boat">8 Seater Pedal Boat</option>
+        <option value="15 Seater Pedal Boat">15 Seater Pedal Boat</option>
+      </select></td></tr>
+      <tr><td><label for="">Travel Duration in Hours</label></td>
+      <td><input type="number"id="duration"value="hour"class="a"></td></tr>
+    </table>
+    <div>
+        <button id="submit" onclick="caliculatebill(boatPrice,duration)">BookRide</button>
+    </div>
+    <div id="result"></div>
+</div>
+</form>
+<script src="boat.js"></script>
+</body>
+</html>
