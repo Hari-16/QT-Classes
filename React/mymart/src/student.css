@@ -1,0 +1,14 @@
+table{
+    background-color: antiquewhite;
+    border: 2px solid green;
+}
+
+tr td,th{
+    border: 2px solid green;
+}
+h3{
+    text-align: start;
+}
+.headcolor{
+    background-color: rgb(241, 172, 9);
+}
